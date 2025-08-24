@@ -21,9 +21,9 @@ Tool for penetration testing — finds open ports, tests for vulnerabilities.
 ## 🛠️ Installation  
 
 ```bash
-git clone https://github.com/your-repo/Scanner-v2.5.git
-cd Scanner-v2.5
-pip install -r requirements.txt
+#git clone https://github.com/your-#repo/Scanner-v2.5.git
+#cd Scanner-v2.5
+#pip install -r requirements.txt
 
 import socket
 import tkinter as tk
