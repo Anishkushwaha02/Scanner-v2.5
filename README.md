@@ -1,7 +1,29 @@
-# Scanner-v2.5
-Based for Penatration Testers. Finds open_ports.  Easy to run .
-# -*- Anish Kushwaha -*- #
-# Creator : Anish_Kushwaha@proton.me
+# 🔍 Scanner-v2.5  
+
+Tool for penetration testing — finds open ports, tests for vulnerabilities.  
+
+---
+
+## ✨ Author  
+**Anish Kushwaha**  
+📧 [Anish_Kushwaha@proton.me](mailto:Anish_Kushwaha@proton.me)
+
+---
+
+## ⚡ Features  
+- Fast multithreaded scanning  
+- Banner grabbing (service detection)  
+- Custom port range support  
+- User-friendly CLI output  
+
+---
+
+## 🛠️ Installation  
+
+```bash
+git clone https://github.com/your-repo/Scanner-v2.5.git
+cd Scanner-v2.5
+pip install -r requirements.txt
 
 import socket
 import tkinter as tk
