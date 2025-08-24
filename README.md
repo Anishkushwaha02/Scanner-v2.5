@@ -14,8 +14,6 @@ try:
 except ImportError:
     ipapi = None  # Optional
 
-# ------------------ BANNER GRABBING ------------------
-
 def grab_banner(ip, port):
     try:
         s = socket.socket()
@@ -27,8 +25,6 @@ def grab_banner(ip, port):
         return banner if banner else None
     except:
         return None
-
-# ------------------ PORT SCANNING --------------------
 
 def scan_ports(domain, max_ports, output_text):
     start_time = datetime.now()
@@ -76,8 +72,6 @@ def scan_ports(domain, max_ports, output_text):
     output_text.insert(tk.END, f"Time Taken: {elapsed:.2f} seconds\n", 'info')
     output_text.insert(tk.END, "Scan Complete.\n", 'success')
 
-# ------------------ GUI SETUP ------------------------
-
 def start_scan_thread():
     domain = domain_entry.get().strip()
     max_ports = ports_entry.get().strip()
@@ -85,8 +79,6 @@ def start_scan_thread():
         output_text.insert(tk.END, "Please enter a valid domain and number of ports.\n", 'error')
         return
     threading.Thread(target=scan_ports, args=(domain, int(max_ports), output_text)).start()
-
-# ------------------ UI DESIGN ------------------------
 
 root = tk.Tk()
 root.title("Brutal Port Scanner by Anish Kushwaha")
